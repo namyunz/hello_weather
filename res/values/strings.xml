@@ -4,4 +4,10 @@
     <string name="app_name">Hello Weather</string>
     <string name="action_settings">Settings</string>
     <string name="action_add">Add</string>
+    <string name="weather_icon_desc">weather icon</string>
+    
+    <!-- Initialize Strings -->
+    <string name="init_location_text">Location</string>
+    <string name="init_detail_weather">Detail</string>
+    <string name="init_current_weather">Current</string>
 </resources>

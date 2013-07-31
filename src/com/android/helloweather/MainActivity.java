@@ -4,10 +4,9 @@ import com.actionbarsherlock.app.ActionBar;
 import com.actionbarsherlock.app.SherlockActivity;
 import com.actionbarsherlock.view.MenuInflater;
 import com.actionbarsherlock.view.MenuItem;
+import com.android.helloweather.data.WeatherParser;
 
 import android.os.Bundle;
-import android.app.Activity;
-import android.view.Menu;
 
 public class MainActivity extends SherlockActivity {
 
@@ -20,6 +19,9 @@ public class MainActivity extends SherlockActivity {
         
         mActionBar=getSupportActionBar();
         mActionBar.setTitle(R.string.app_name);
+        
+        String[] arg={"http://weather.yahooapis.com/forecastrss?w=1132599&u=c"};
+        new WeatherParser().execute(arg);
     }
 
 	@Override
