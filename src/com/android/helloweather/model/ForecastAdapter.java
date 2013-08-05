@@ -2,23 +2,22 @@ package com.android.helloweather.model;
 
 import java.util.List;
 
-import com.android.helloweather.R;
-import com.android.helloweather.data.WeatherData;
-
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.ImageView;
 import android.widget.TextView;
 
-public class MainWeatherAdapter extends ArrayAdapter<WeatherData> {
+import com.android.helloweather.R;
+import com.android.helloweather.data.ForecastData;
 
-	private List<WeatherData> objects;
+public class ForecastAdapter extends ArrayAdapter<ForecastData> {
+
+	private List<ForecastData> objects;
 	private Context mContext;
 
-	public MainWeatherAdapter(Context context, int textViewResourceId, List<WeatherData> objects) {
+	public ForecastAdapter(Context context, int textViewResourceId, List<ForecastData> objects) {
 		super(context, textViewResourceId, objects);
 		this.mContext=context;
 		this.objects=objects;
@@ -30,7 +29,7 @@ public class MainWeatherAdapter extends ArrayAdapter<WeatherData> {
 	}
 
 	@Override
-	public WeatherData getItem(int position) {
+	public ForecastData getItem(int position) {
 		return objects.get(position);
 	}
 
@@ -45,23 +44,22 @@ public class MainWeatherAdapter extends ArrayAdapter<WeatherData> {
 		if(mView==null)
 		{
 			LayoutInflater mInflater=(LayoutInflater)mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-			mView=mInflater.inflate(R.layout.main_list_item, null);
+			mView=mInflater.inflate(R.layout.forecastlistitem, null);
 		}
 		
-		WeatherData element=objects.get(position);
+		ForecastData element=objects.get(position);
 		if(element!=null)
 		{
-			ImageView weather_icon=(ImageView)mView.findViewById(R.id.weather_icon);
-			TextView location=(TextView)mView.findViewById(R.id.location_text);
+			TextView date=(TextView)mView.findViewById(R.id.date_text);
 			TextView status=(TextView)mView.findViewById(R.id.status_text);
-			TextView current=(TextView)mView.findViewById(R.id.current_text);
+			TextView temp=(TextView)mView.findViewById(R.id.temp_text);
 			
-			weather_icon.setImageBitmap(element.getImage());
-			location.setText(element.getLocation());
-			status.setText(element.getCurrentStatus());
-			current.setText(element.getCurrentTemp()+"¡ÆC");
+			date.setText(element.getDate()+" "+element.getDay());
+			status.setText(element.getStatus());
+			temp.setText("Low: "+element.getLowTemp()+"¡ÆC High: "+element.getHighTemp()+"¡ÆC");
 		}
 		
 		return mView;
 	}
+	
 }

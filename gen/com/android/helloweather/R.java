@@ -952,22 +952,35 @@ containing a value of this type.
         public static final int abs__textButton=0x7f040013;
         public static final int abs__title=0x7f04001b;
         public static final int abs__up=0x7f04000b;
-        public static final int action_add=0x7f040037;
-        public static final int action_settings=0x7f040036;
-        public static final int current_text=0x7f040035;
-        public static final int detail_text=0x7f040034;
+        public static final int action_add=0x7f040044;
+        public static final int action_settings=0x7f040043;
+        public static final int control_layout=0x7f04003f;
+        public static final int current_status_text=0x7f040034;
+        public static final int current_temp_text=0x7f040037;
+        public static final int current_text=0x7f04003d;
+        public static final int date_text=0x7f040039;
+        public static final int detail_text=0x7f040036;
         public static final int disableHome=0x7f040009;
         public static final int edit_query=0x7f040026;
+        public static final int forecast_list=0x7f040038;
         public static final int homeAsUp=0x7f040006;
         public static final int listMode=0x7f040002;
-        public static final int location_text=0x7f040033;
+        public static final int location_text=0x7f04003c;
         public static final int normal=0x7f040001;
+        public static final int result_listview=0x7f040042;
+        public static final int search_btn=0x7f040041;
+        public static final int search_field=0x7f040040;
         public static final int showCustom=0x7f040008;
         public static final int showHome=0x7f040005;
         public static final int showTitle=0x7f040007;
+        public static final int status_layout=0x7f040033;
+        public static final int status_text=0x7f04003a;
         public static final int tabMode=0x7f040003;
+        public static final int temp_text=0x7f04003b;
+        public static final int time_text=0x7f040035;
         public static final int useLogo=0x7f040004;
         public static final int weather_icon=0x7f040032;
+        public static final int weather_list=0x7f04003e;
         public static final int wrap_content=0x7f040000;
     }
     public static final class integer {
@@ -995,13 +1008,17 @@ containing a value of this type.
         public static final int abs__search_dropdown_item_icons_2line=0x7f030012;
         public static final int abs__search_view=0x7f030013;
         public static final int abs__simple_dropdown_hint=0x7f030014;
-        public static final int main_list_item=0x7f030015;
-        public static final int mainlayout=0x7f030016;
-        public static final int sherlock_spinner_dropdown_item=0x7f030017;
-        public static final int sherlock_spinner_item=0x7f030018;
+        public static final int detailweatherlayout=0x7f030015;
+        public static final int forecastlistitem=0x7f030016;
+        public static final int main_list_item=0x7f030017;
+        public static final int mainlayout=0x7f030018;
+        public static final int searchlayout=0x7f030019;
+        public static final int sherlock_spinner_dropdown_item=0x7f03001a;
+        public static final int sherlock_spinner_item=0x7f03001b;
     }
     public static final class menu {
-        public static final int main=0x7f0b0000;
+        public static final int detail_weather_acitivity=0x7f0b0000;
+        public static final int main=0x7f0b0001;
     }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
@@ -1046,11 +1063,14 @@ containing a value of this type.
         public static final int action_add=0x7f09000f;
         public static final int action_settings=0x7f09000e;
         public static final int app_name=0x7f09000d;
+        public static final int hello_world=0x7f090016;
         public static final int init_current_weather=0x7f090013;
         public static final int init_detail_weather=0x7f090012;
         /**  Initialize Strings 
          */
         public static final int init_location_text=0x7f090011;
+        public static final int search_btn=0x7f090014;
+        public static final int title_activity_detail_weather_acitivity=0x7f090015;
         public static final int weather_icon_desc=0x7f090010;
     }
     public static final class style {

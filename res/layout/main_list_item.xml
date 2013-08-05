@@ -12,7 +12,7 @@
         android:layout_alignParentLeft="true"
         android:layout_centerVertical="true"
         android:scaleType="fitStart"
-        android:background="#000000"
+        android:background="#FFFFFF"
         android:contentDescription="@string/weather_icon_desc"/>
     
     <LinearLayout 
@@ -25,17 +25,20 @@
         android:orientation="vertical">
         
         <TextView
+            android:id="@+id/status_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#343838"
+            android:text="@string/init_detail_weather" />
+        
+        <TextView
             android:id="@+id/location_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="#BCBCBC"
             android:text="@string/init_location_text" />
         
-        <TextView
-            android:id="@+id/detail_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/init_detail_weather" />
-
     </LinearLayout>
 
     <TextView
@@ -44,6 +47,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
+        android:textSize="25sp"
+        android:textColor="#343838"
         android:text="@string/init_current_weather" />
     
 </RelativeLayout>
